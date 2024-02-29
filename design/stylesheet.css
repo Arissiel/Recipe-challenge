@@ -1,0 +1,165 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);    
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: 100px auto 100px auto ;
+    padding: 50px;
+    border-radius: 35px;    
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    align-self: center;
+}    
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);    
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: hsl(332, 51%, 32%);
+    margin: 0 auto 2px 15px;
+    padding-top: 8px;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 8px;
+}
+
+ul ol {
+    list-style-position: outside;
+    color: hsl(14, 45%, 36%); 
+    font-size: 16px;   
+}
+
+li {
+    padding-bottom: 10px;   
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+li span {
+    position: relative;
+    left: 10px;   
+}
+
+.instructions::before {
+    content: ""; 
+    display: block; 
+    border-top: 1px solid hsl(30, 54%, 90%); 
+    margin-bottom: 10px;
+}
+
+.instructions::after {
+    content: ""; 
+    display: block; 
+    border-top: 1px solid hsl(30, 54%, 90%); 
+    margin-bottom: 10px;    
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 54%, 90%); 
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: normal;    
+}
+
+.table-content {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;   
+}
+
+.attribution p {
+    align-self: flex-end;
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+ 
+@media only screen and (max-width: 900px) {
+    
+    body {
+        background-color: hsl(0, 0%, 100%); 
+        margin: 0;             
+    }
+    
+    .container {
+        display: contents;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;        
+    }
+
+    .container img {        
+        border-radius: 0;
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;        
+    }
+
+    .content {
+        padding: 20px; 
+    }
+
+    .instructions {
+        padding-right: 10px;
+    }
+ }
+
+
